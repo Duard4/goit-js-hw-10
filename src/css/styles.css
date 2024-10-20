@@ -11,8 +11,106 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+.nav {
+	gap: 18px;
+	display: grid;
+	margin-top: 24px;
+	text-align: center;
+}
+.link {
+	transition: color var(--animation);
+}
+.link:hover {
+	color: var(--hblue);
+}
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.33333;
+	letter-spacing: 0.04em;
+}
+
+input,
+button {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+input {
+	padding: 0.5rem 1rem;
+	max-height: 40px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid var(--black);
+}
+form {
+	max-width: 360px;
+	button {
+		margin-top: 24px;
+		width: 100%;
+	}
+}
+label {
+	display: grid;
+	gap: 8px;
+}
+fieldset {
+	border-radius: 4px;
+	border: 1px solid var(--black);
+	display: flex;
+	padding-left: 3rem;
+	gap: 3rem;
+	margin-top: 16px;
+	height: 72px;
+	box-sizing: border-box;
+	input {
+		color: #757575;
+		width: 20px;
+		height: 20px;
+		margin: 6px;
+	}
+	label {
+		align-items: center;
+		display: flex;
+	}
+}
+button {
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	border: none;
+	background-color: #cfcfcf;
+	color: #989898;
+	transition: background-color var(--animation);
+}
+.flatpickr-calendar.open {
+	background-color: #f5f5f5;
+}
+.timer {
+	display: flex;
+	gap: 24px;
+	margin-top: 32px;
+}
+.field {
+	display: grid;
+	text-transform: uppercase;
+	text-align: center;
+}
+.value {
+	font-size: 2.5rem;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+}
+.flatpickr-input {
+	margin-right: 8px;
+}
+.active {
+	background-color: var(--blue);
+	color: var(--white);
+}
+.active:hover {
+	background-color: var(--hblue);
+}

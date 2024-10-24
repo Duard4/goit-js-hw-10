@@ -36,7 +36,7 @@ form.addEventListener('input', ()=> {
     delayInput.value.trim() && stateInput.value ? enableButton(createButton) : disableButton(createButton);
 })
 
-createButton.addEventListener('click', event => {
+form.addEventListener('submit', event => {
     event.preventDefault();
 
     delayValue = parseInt(delayInput.value); 
@@ -57,4 +57,5 @@ createButton.addEventListener('click', event => {
                 color: 'red',
             });
         });
+
 });
